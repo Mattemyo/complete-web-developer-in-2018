@@ -7,3 +7,6 @@
 * Flexbox Froggy - practice flexbox
 
 * Can I Use ? - check if prefixes are needed for different browsers
+
+
+* MailChimp - help with email marketing
