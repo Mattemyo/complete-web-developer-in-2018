@@ -8,5 +8,8 @@
 
 * Can I Use ? - check if prefixes are needed for different browsers
 
+- MailChimp - help with email marketing
 
-* MailChimp - help with email marketing
+* Animate.css - help with CSS animations
+
+* Mashup Template, Start Bootstrap or Creative Tim - Bootstrap templates
