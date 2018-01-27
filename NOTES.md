@@ -14,6 +14,8 @@
 
 * Mashup Template, Start Bootstrap or Creative Tim - Bootstrap templates
 
-*Extends keyword - inherits from superior class (must call consrucor function)
+* Extends keyword - inherits from superior class (must call consrucor function)
+
+* SkimFeed.com - windows command prompt vs max/linux
 
 
