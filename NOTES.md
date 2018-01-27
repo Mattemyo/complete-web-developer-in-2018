@@ -20,6 +20,10 @@
 
 * Robohash - get random pictures of robots
 
-* STATE - describes the current state of the app, mutuable. Is declared in the constructor function
+* STATE - describes the current state of the app, mutuable. Is declared in the constructor function. Describes app. Typical for 'smart' components
 
 * PROPS - properties, immutable. Child element receives parent's state, becomes a property
+
+* Life cycle methods - Mounting (when app starts), Updating (when something changes), Unmounting(remove component from page)
+
+* Children - wrap jsx element around another one

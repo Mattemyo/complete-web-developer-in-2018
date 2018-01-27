@@ -1,19 +1,30 @@
 import React, { Component } from "react";
 import CardList from "./CardList";
 import SearchBox from "./SearchBox";
-import { robots } from "./robots";
+import Scroll from'./Scroll'
+import "./App.css";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      robots: robots,
+      robots: [],
       searchfield: ""
     };
   }
 
+  // after mounting. if it is called, render will be called again since state has been set
+  componentDidMount() {
+    // request api info
+    fetch("https://jsonplaceholder.typicode.com/users")
+      //convert to json
+      .then(res => res.json())
+      // setState with new data from api
+      .then(users => this.setState({ robots: users }));
+  }
+
   onSearchChange = event => {
-      event.preventDefault();
+    event.preventDefault();
     //   Update state (input field changes)
     this.setState({ searchfield: event.target.value });
   };
@@ -26,11 +37,17 @@ class App extends Component {
         .includes(this.state.searchfield.toLowerCase());
     });
 
-    return (
+    // if request is slow
+    // ternary operator depending on length of array
+    return this.state.robots.length === 0 ? (
+      <h1>Loading</h1>
+    ) : (
       <div className="tc">
         <h1>RoboFriends</h1>
         <SearchBox searchChange={this.onSearchChange} />
-        <CardList robots={filteredRobots} />
+        <Scroll>
+          <CardList robots={filteredRobots} />
+        </Scroll>
       </div>
     );
   }

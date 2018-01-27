@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=VT323");
+
+h1 {
+  font-family: "VT323", monospace, "Arial Narrow", Arial, sans-serif;
+  font-size: 90px;
+  color: rgba(10, 150, 210, 1);
+}
