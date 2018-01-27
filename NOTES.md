@@ -29,3 +29,17 @@
 * Children - wrap jsx element around another one
 
 * File structuring - Components (small segments, dumb components), containers(smart components, use class syntax, pass down state to components)
+
+
+* NPM run build - creates build folder, transpiles everything and optimizes it 
+
+
+* APIs - prototyping -> star wars api, serious payment -> stripe api sending messages -> twillio api
+
+* API inspiration - apilist.fun
+
+
+
+
+
+
