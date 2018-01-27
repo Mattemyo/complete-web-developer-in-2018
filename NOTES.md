@@ -13,3 +13,7 @@
 * Animate.css - help with CSS animations
 
 * Mashup Template, Start Bootstrap or Creative Tim - Bootstrap templates
+
+*Extends keyword - inherits from superior class (must call consrucor function)
+
+
