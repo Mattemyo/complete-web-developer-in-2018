@@ -5,6 +5,7 @@ var allLi = [...document.querySelectorAll("li")];
 var buttons = document.querySelectorAll(".btn-danger");
 
 window.onload = updateButtonList();
+window.onload = updateLis();
 
 function inputLength() {
   return input.value.length;
@@ -18,9 +19,14 @@ function createListElement() {
   li.appendChild(button);
   ul.appendChild(li);
   input.value = "";
+  updateLis();
   updateButtonList();
 }
 
+function updateLis() {
+  var allLi = [...document.querySelectorAll("li")];
+  allLi.map(li => li.addEventListener("click", toggleLineThorugh));
+}
 
 function updateButtonList() {
   var buttons = document.querySelectorAll(".btn-danger");
@@ -51,7 +57,3 @@ function toggleLineThorugh() {
 button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
-
-allLi.map(li => li.addEventListener("click", toggleLineThorugh));
-
-
