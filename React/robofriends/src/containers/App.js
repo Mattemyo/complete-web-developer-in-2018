@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import CardList from "./CardList";
-import SearchBox from "./SearchBox";
-import Scroll from'./Scroll'
+import CardList from "../components/CardList";
+import SearchBox from "../components/SearchBox";
+import Scroll from "../components/Scroll";
 import "./App.css";
 
 class App extends Component {
@@ -30,8 +30,10 @@ class App extends Component {
   };
 
   render() {
+    // clean up code
+    const { robots, searchfield } = this.state;
     //   new array with matching robots
-    const filteredRobots = this.state.robots.filter(robot => {
+    const filteredRobots = robots.filter(robot => {
       return robot.name
         .toLowerCase()
         .includes(this.state.searchfield.toLowerCase());
@@ -39,7 +41,7 @@ class App extends Component {
 
     // if request is slow
     // ternary operator depending on length of array
-    return this.state.robots.length === 0 ? (
+    return !robots.length ? (
       <h1>Loading</h1>
     ) : (
       <div className="tc">

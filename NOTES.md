@@ -27,3 +27,5 @@
 * Life cycle methods - Mounting (when app starts), Updating (when something changes), Unmounting(remove component from page)
 
 * Children - wrap jsx element around another one
+
+* File structuring - Components (small segments, dumb components), containers(smart components, use class syntax, pass down state to components)
