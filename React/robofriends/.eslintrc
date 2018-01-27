@@ -1,0 +1,20 @@
+{
+  "parser": "babel-eslint",
+  "plugins": ["react", "import"],
+  "rules": {
+    "max-len": [1, 70, 2, { "ignoreComments": true }],
+    "prop-types": [2],
+    "import" : {
+      "no-unresolved": [2, {"commonjs": true, "amd": true}],
+       "import/named": 2,
+  "import/namespace": 2,
+  "import/default": 2,
+  "import/export": 2
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ]
+}

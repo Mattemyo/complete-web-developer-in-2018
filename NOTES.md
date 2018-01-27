@@ -8,7 +8,7 @@
 
 * Can I Use ? - check if prefixes are needed for different browsers
 
-- MailChimp - help with email marketing
+* MailChimp - help with email marketing
 
 * Animate.css - help with CSS animations
 
@@ -17,5 +17,8 @@
 * Extends keyword - inherits from superior class (must call consrucor function)
 
 * SkimFeed.com - windows command prompt vs max/linux
+
+* Robohash - get random pictures of robots
+
 
 
