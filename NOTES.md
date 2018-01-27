@@ -20,5 +20,6 @@
 
 * Robohash - get random pictures of robots
 
+* STATE - describes the current state of the app, mutuable. Is declared in the constructor function
 
-
+* PROPS - properties, immutable. Child element receives parent's state, becomes a property
