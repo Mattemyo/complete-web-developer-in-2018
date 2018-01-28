@@ -40,5 +40,6 @@
 
 * Lea Verou - nice css3 patterns
 
-
 * Particles.js - awesome and cool interactive backgrounds
+
+* Add parameters to function without calling it immediately - > nest it in another function
