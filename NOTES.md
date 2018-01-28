@@ -30,16 +30,15 @@
 
 * File structuring - Components (small segments, dumb components), containers(smart components, use class syntax, pass down state to components)
 
-
-* NPM run build - creates build folder, transpiles everything and optimizes it 
-
+- NPM run build - creates build folder, transpiles everything and optimizes it
 
 * APIs - prototyping -> star wars api, serious payment -> stripe api sending messages -> twillio api
 
 * API inspiration - apilist.fun
 
+* icons8.com - royalty free icons
+
+* Lea Verou - nice css3 patterns
 
 
-
-
-
+* Particles.js - awesome and cool interactive backgrounds
